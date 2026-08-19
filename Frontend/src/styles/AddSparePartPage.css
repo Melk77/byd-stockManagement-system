@@ -1,0 +1,140 @@
+.add-spare-part-page {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 20px;
+    background-color: #f0f4f8;
+}
+
+.add-spare-part-form {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.add-spare-part-form h2 {
+    text-align: center;
+    color: #0047ab;
+    font-size: 1.8rem;
+}
+
+.add-spare-part-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.add-spare-part-form input,
+.add-spare-part-form select {
+    padding: 12px 14px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.add-spare-part-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0047ab;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-spare-part-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.add-spare-part-form .back-button {
+    background-color: transparent;
+    color: #0047ab;
+    border: 2px solid #0047ab;
+}
+
+.add-spare-part-form .error {
+    color: #dc2626;
+    font-size: 14px;
+}
+
+.add-spare-part-form .success {
+    color: #16a34a;
+    font-size: 14px;
+}
+
+.add-spare-part-form .price-row {
+    display: flex;
+    gap: 14px;
+}
+
+.add-spare-part-form .price-row label {
+    flex: 1;
+}
+
+.add-spare-part-form .hint {
+    font-size: 13px;
+    color: #6b7280;
+    font-weight: 400;
+    margin: -8px 0 0;
+}
+
+.add-spare-part-form .hint-link {
+    color: #0047ab;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.add-spare-part-form .price-row {
+    min-width: 0;
+}
+
+.add-spare-part-form .price-row label {
+    min-width: 0;
+}
+
+.add-spare-part-form .price-row input {
+    width: 100%;
+    min-width: 0;
+}
+
+.add-spare-part-form .form-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.add-spare-part-form .form-actions button {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .add-spare-part-page {
+        padding: 1.5rem 12px;
+    }
+
+    .add-spare-part-form {
+        padding: 24px;
+    }
+
+    .add-spare-part-form .price-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .add-spare-part-form .form-actions {
+        flex-direction: column;
+    }
+}

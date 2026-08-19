@@ -1,0 +1,85 @@
+.add-car-model-page {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 20px;
+    background-color: #f0f4f8;
+}
+
+.add-car-model-form {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.add-car-model-form h2 {
+    text-align: center;
+    color: #0047ab;
+    font-size: 1.8rem;
+}
+
+.add-car-model-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.add-car-model-form input,
+.add-car-model-form select {
+    padding: 12px 14px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.add-car-model-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0047ab;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-car-model-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.add-car-model-form .back-button {
+    background-color: transparent;
+    color: #0047ab;
+    border: 2px solid #0047ab;
+}
+
+.add-car-model-form .error {
+    color: #dc2626;
+    font-size: 14px;
+}
+
+.add-car-model-form .success {
+    color: #16a34a;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .add-car-model-page {
+        padding: 1.5rem 12px;
+    }
+
+    .add-car-model-form {
+        padding: 24px;
+    }
+}

@@ -1,0 +1,221 @@
+.products-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: #f4f6f9;
+}
+
+.products-page h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #0047ab;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.products-page .error {
+  text-align: center;
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+.products-page .empty-state {
+  text-align: center;
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+/* ===========================
+   Search
+=========================== */
+
+.spare-parts-filters {
+  max-width: 1200px;
+  margin: 0 auto 25px;
+}
+
+.spare-parts-filters input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 2px solid #dbe2ea;
+  border-radius: 10px;
+  background: white;
+  transition: all 0.25s ease;
+}
+
+.spare-parts-filters input:focus {
+  outline: none;
+  border-color: #0056d6;
+  box-shadow: 0 0 0 4px rgba(0, 86, 214, 0.12);
+}
+
+/* ===========================
+   Table
+=========================== */
+
+.spare-parts-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.spare-parts-table thead {
+  background: #0047ab;
+}
+
+.spare-parts-table th {
+  color: white;
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.spare-parts-table td {
+  padding: 18px;
+  font-size: 15px;
+  color: #343a40;
+  border-bottom: 1px solid #edf2f7;
+  vertical-align: middle;
+}
+
+.spare-parts-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.spare-parts-table tbody tr:hover {
+  background: #f8fbff;
+}
+
+.spare-parts-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===========================
+   Action Column
+=========================== */
+
+.row-actions-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+/* Quantity Input */
+
+.sell-qty-input {
+  width: 70px;
+  height: 40px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background: white;
+  text-align: center;
+  font-size: 14px;
+  transition: all .2s;
+}
+
+.sell-qty-input:focus {
+  outline: none;
+  border-color: #0056d6;
+  box-shadow: 0 0 0 3px rgba(0, 86, 214, .15);
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.action-button {
+  height: 40px;
+  min-width: 85px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sell */
+
+.sell-btn {
+  background: #0056d6;
+  color: white;
+}
+
+.sell-btn:hover:not(:disabled) {
+  background: #0045ac;
+}
+
+.sell-btn:active:not(:disabled) {
+  transform: scale(.98);
+}
+
+.sell-btn:disabled {
+  background: #d6d6d6;
+  color: #8c8c8c;
+  cursor: not-allowed;
+}
+
+/* Delete */
+
+.delete-btn {
+  background: white;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.delete-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:active {
+  transform: scale(.98);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 992px) {
+
+  .products-page {
+    padding: 1rem;
+  }
+
+  .spare-parts-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .spare-parts-table th,
+  .spare-parts-table td {
+    padding: 14px;
+  }
+
+  .row-actions-cell {
+    gap: 8px;
+  }
+
+  .action-button {
+    min-width: 75px;
+    font-size: 13px;
+  }
+
+  .sell-qty-input {
+    width: 60px;
+  }
+}

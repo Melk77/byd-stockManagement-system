@@ -1,0 +1,117 @@
+.car-models-page {
+    width: 100%;
+    background-color: #f0f4f8;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.car-models-page h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #0047ab;
+    margin-bottom: 2rem;
+}
+
+.car-models-list {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.car-model-row {
+    background: white;
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+}
+
+.car-model-row input {
+    padding: 8px 10px;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 120px;
+}
+
+.car-model-name {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.row-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.row-actions button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-btn {
+    background-color: #0047ab;
+    color: white;
+}
+
+.edit-btn,
+.save-btn {
+    background-color: #ffb81c;
+    color: #0047ab;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.car-models-page .add-new-item-button {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0047ab;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.car-models-page .error {
+    text-align: center;
+    color: #dc2626;
+}
+
+.car-models-page .empty-state {
+    text-align: center;
+    color: #6b7280;
+}
+
+@media (max-width: 600px) {
+    .car-models-page {
+        padding: 1rem;
+    }
+
+    .car-model-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .row-actions {
+        flex-wrap: wrap;
+    }
+}

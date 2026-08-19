@@ -1,0 +1,127 @@
+.manage-users-page {
+    width: 100%;
+    min-height: 100%;
+    background-color: #f0f4f8;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.manage-users-page h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #0047ab;
+    margin-bottom: 2rem;
+}
+
+.manage-users-page h3 {
+    color: #0047ab;
+    max-width: 900px;
+    margin: 2rem auto 1rem;
+}
+
+.create-user-form {
+    max-width: 480px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.create-user-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.create-user-form input,
+.create-user-form select {
+    padding: 10px 12px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+}
+
+.create-user-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0047ab;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create-user-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.users-table {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.users-table th,
+.users-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.users-table th {
+    background-color: #0047ab;
+    color: white;
+}
+
+.toggle-active-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffb81c;
+    color: #0047ab;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.toggle-active-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.manage-users-page .error {
+    color: #dc2626;
+    text-align: center;
+}
+
+.manage-users-page .success {
+    color: #16a34a;
+}
+
+@media (max-width: 768px) {
+    .manage-users-page {
+        padding: 1rem;
+    }
+
+    .create-user-form {
+        padding: 1.25rem;
+    }
+
+    .users-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+}

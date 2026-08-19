@@ -1,0 +1,168 @@
+.history-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100%;
+  background-color: #f0f4f8;
+}
+
+.history-page h2 {
+  font-size: 2rem;
+  color: #0047ab;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filter-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-section label {
+  font-weight: bold;
+  color: #0047ab;
+  font-size: 1.1rem;
+}
+
+.timeframe-select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #0047ab;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.timeframe-select:hover {
+  border-color: #003d8f;
+  box-shadow: 0 0 8px rgba(0, 71, 171, 0.2);
+}
+
+.timeframe-select:focus {
+  outline: none;
+  border-color: #003d8f;
+  box-shadow: 0 0 8px rgba(0, 71, 171, 0.3);
+}
+
+.no-history {
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.history-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-left: 4px solid #0047ab;
+}
+
+.history-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateX(5px);
+}
+
+.history-info {
+  flex: 1;
+}
+
+.history-info h4 {
+  font-size: 1.2rem;
+  color: #0047ab;
+  margin-bottom: 0.5rem;
+}
+
+.car-model {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.sold-date {
+  color: #999;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.quantity-badge {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 100px;
+}
+
+/* Navigation */
+.history-navigation {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #ddd;
+}
+
+.back-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0047ab;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #003d8f;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .timeframe-select {
+    width: 100%;
+  }
+
+  .history-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quantity-badge {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
+
+  .history-page h2 {
+    font-size: 1.5rem;
+  }
+}

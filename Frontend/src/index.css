@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f0f4f8;
+    color: #1f2937;
+}
+
+#root {
+    height: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* Native spin buttons on number inputs render inconsistently (they can
+   crowd/overlap placeholder text on narrower fields like Minimum/Maximum
+   Price) — dropped in favor of a plain text-style number field. */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Consistent, app-wide focus state for anything interactive — one
+   definition instead of repeating :focus rules per page. */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 2px solid #0047ab;
+    outline-offset: 2px;
+}
+
+/* A little breathing room so page transitions don't feel abrupt. */
+.page-content>* {
+    animation: page-fade-in 0.15s ease-in;
+}
+
+@keyframes page-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Base touch-target sizing on small screens — buttons and inputs stay
+   comfortably tappable instead of shrinking with their container. */
+@media (max-width: 600px) {
+
+    button,
+    input,
+    select {
+        font-size: 16px;
+    }
+}

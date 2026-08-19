@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "SparePart" ADD COLUMN     "maxPrice" DOUBLE PRECISION,
+ADD COLUMN     "minPrice" DOUBLE PRECISION;

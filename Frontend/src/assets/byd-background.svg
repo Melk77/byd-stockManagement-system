@@ -1,0 +1,75 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky background -->
+  <rect width="800" height="600" fill="#87CEEB"/>
+  
+  <!-- Sun -->
+  <circle cx="700" cy="100" r="50" fill="#FFD700"/>
+  
+  <!-- Road -->
+  <rect y="450" width="800" height="150" fill="#696969"/>
+  
+  <!-- Road markings -->
+  <line x1="0" y1="510" x2="800" y2="510" stroke="white" stroke-width="4" stroke-dasharray="40,40"/>
+  
+  <!-- Car body -->
+  <ellipse cx="400" cy="380" rx="150" ry="80" fill="#0047ab"/>
+  
+  <!-- Car top/cabin -->
+  <rect x="280" y="300" width="240" height="100" rx="40" fill="#0047ab"/>
+  
+  <!-- Front windshield -->
+  <polygon points="280,320 340,280 340,360 280,360" fill="#87CEEB" opacity="0.6"/>
+  
+  <!-- Back windshield -->
+  <polygon points="460,320 520,280 520,360 460,360" fill="#87CEEB" opacity="0.6"/>
+  
+  <!-- Left door window -->
+  <rect x="310" y="310" width="70" height="70" rx="10" fill="#87CEEB" opacity="0.6"/>
+  
+  <!-- Right door window -->
+  <rect x="420" y="310" width="70" height="70" rx="10" fill="#87CEEB" opacity="0.6"/>
+  
+  <!-- Front bumper -->
+  <rect x="240" y="430" width="320" height="30" fill="#1a1a1a" rx="5"/>
+  
+  <!-- Front headlights -->
+  <circle cx="290" cy="445" r="12" fill="#FFD700"/>
+  <circle cx="510" cy="445" r="12" fill="#FFD700"/>
+  
+  <!-- Left wheel -->
+  <circle cx="320" cy="480" r="45" fill="#333"/>
+  <circle cx="320" cy="480" r="35" fill="#666"/>
+  <circle cx="320" cy="480" r="8" fill="#FFB81C"/>
+  
+  <!-- Right wheel -->
+  <circle cx="480" cy="480" r="45" fill="#333"/>
+  <circle cx="480" cy="480" r="35" fill="#666"/>
+  <circle cx="480" cy="480" r="8" fill="#FFB81C"/>
+  
+  <!-- Door handle left -->
+  <rect x="380" y="355" width="8" height="20" fill="#FFB81C" rx="4"/>
+  
+  <!-- Door handle right -->
+  <rect x="412" y="355" width="8" height="20" fill="#FFB81C" rx="4"/>
+  
+  <!-- BYD Logo on hood -->
+  <circle cx="400" cy="420" r="15" fill="#FFB81C"/>
+  <text x="400" y="428" text-anchor="middle" font-size="20" font-weight="bold" fill="#0047ab">BYD</text>
+  
+  <!-- License plate -->
+  <rect x="360" y="455" width="80" height="25" fill="white" stroke="black" stroke-width="2"/>
+  <text x="400" y="472" text-anchor="middle" font-size="10" font-weight="bold" fill="black">TMS STOCK</text>
+  
+  <!-- Clouds -->
+  <g fill="white" opacity="0.7">
+    <ellipse cx="100" cy="80" rx="60" ry="30"/>
+    <ellipse cx="150" cy="90" rx="50" ry="25"/>
+    <ellipse cx="50" cy="100" rx="40" ry="20"/>
+  </g>
+  
+  <g fill="white" opacity="0.7">
+    <ellipse cx="650" cy="150" rx="60" ry="30"/>
+    <ellipse cx="700" cy="160" rx="50" ry="25"/>
+    <ellipse cx="600" cy="170" rx="40" ry="20"/>
+  </g>
+</svg>

@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model CarModel {
+  id         String      @id @default(cuid())
+  carModel   String
+  year       String?
+  spareParts SparePart[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([carModel, year])
+}
+
+model SparePart {
+  id       String @id @default(cuid())
+  name     String
+  quantity Int    @default(0)
+
+  // Price
+  minPrice Float?
+  maxPrice Float?
+
+  carModel   CarModel @relation(fields: [carModelId], references: [id], onDelete: Cascade)
+  carModelId String
+
+  sales SaleHistory[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SaleHistory {
+  id            String   @id @default(cuid())
+  sparePartName String
+  carModel      String
+  year          String?
+  quantity      Int
+  soldDate      DateTime @default(now())
+
+  sparePart   SparePart? @relation(fields: [sparePartId], references: [id], onDelete: SetNull)
+  sparePartId String?
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  username  String   @unique
+  email     String   @unique
+  password  String
+
+  role      Role     @default(STAFF)
+
+  isActive  Boolean  @default(true)
+
+  resetToken       String?   @unique
+  resetTokenExpiry DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum Role {
+  ADMIN
+  STAFF
+}

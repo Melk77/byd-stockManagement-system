@@ -1,0 +1,26 @@
+.not-found-page {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #f0f4f8;
+    color: #0047ab;
+    text-align: center;
+}
+
+.not-found-page h1 {
+    font-size: 5rem;
+}
+
+.not-found-page button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0047ab;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}

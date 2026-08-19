@@ -1,0 +1,20 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#0047ab" stroke="#ffb81c" stroke-width="2"/>
+  
+  <!-- Letter T -->
+  <rect x="20" y="25" width="40" height="8" fill="#ffb81c" rx="2"/>
+  <rect x="38" y="33" width="10" height="32" fill="#ffb81c" rx="2"/>
+  
+  <!-- Letter M -->
+  <rect x="20" y="33" width="8" height="32" fill="white" rx="2"/>
+  <polygon points="28,33 35,50 42,33" fill="white"/>
+  <rect x="42" y="33" width="8" height="32" fill="white" rx="2"/>
+  
+  <!-- Letter S -->
+  <path d="M 65 40 Q 60 38 58 42 Q 57 45 62 47 Q 70 50 68 55 Q 67 58 60 59 Q 55 59 54 55" 
+        fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Small text -->
+  <text x="50" y="75" text-anchor="middle" font-size="10" fill="#ffb81c" font-weight="bold">STOCK</text>
+</svg>
