@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/auth";
+const BASE_URL = "https://tmsimport-backend.vercel.app/api/auth";
 
 export const loginRequest = async (username, password) => {
   const response = await fetch(`${BASE_URL}/login`, {
@@ -53,3 +53,4 @@ export const resetPasswordRequest = async (token, password) => {
 
   return data;
 };
+

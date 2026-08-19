@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/car-models";
+const BASE_URL = "https://tmsimport-backend.vercel.app/api/car-models";
 
 export const fetchCarModels = async (token) => {
   const response = await fetch(BASE_URL, {
@@ -66,3 +66,4 @@ export const deleteCarModel = async (token, id) => {
 
   return data;
 };
+

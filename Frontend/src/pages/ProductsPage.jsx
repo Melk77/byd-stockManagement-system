@@ -17,7 +17,7 @@ const ProductsPage = () => {
       setLoading(true);
       setError("");
 
-      const response = await fetch("http://localhost:5000/api/spare-parts", {
+      const response = await fetch("https://tmsimport-backend.vercel.app/api/spare-parts", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -50,7 +50,7 @@ const ProductsPage = () => {
 
     if (!sellQty || sellQty <= 0 || sellQty > part.quantity) return;
 
-    await fetch(`http://localhost:5000/api/spare-parts/${part.id}/sell`, {
+    await fetch(`https://tmsimport-backend.vercel.app/api/spare-parts/${part.id}/sell`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const ProductsPage = () => {
     const confirmed = window.confirm(`Remove "${part.name}" from inventory?`);
     if (!confirmed) return;
 
-    await fetch(`http://localhost:5000/api/spare-parts/${part.id}`, {
+    await fetch(`https://tmsimport-backend.vercel.app/api/spare-parts/${part.id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -165,3 +165,4 @@ const ProductsPage = () => {
 };
 
 export default ProductsPage;
+

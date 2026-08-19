@@ -12,7 +12,7 @@ export const StockProvider = ({ children }) => {
   const getCarModels = async () => {
 
     const response = await fetch(
-      "http://localhost:5000/api/car-models",
+      "https://tmsimport-backend.vercel.app/api/car-models",
       {
         headers:{
           Authorization:`Bearer ${token}`
@@ -30,7 +30,7 @@ export const StockProvider = ({ children }) => {
   const getSpareParts = async (carModelId) => {
 
     const response = await fetch(
-      `http://localhost:5000/api/spare-parts/${carModelId}`,
+      `https://tmsimport-backend.vercel.app/api/spare-parts/${carModelId}`,
       {
         headers:{
           Authorization:`Bearer ${token}`
@@ -51,7 +51,7 @@ export const StockProvider = ({ children }) => {
   ) => {
 
     const response = await fetch(
-      `http://localhost:5000/api/spare-parts/${sparePartId}/add`,
+      `https://tmsimport-backend.vercel.app/api/spare-parts/${sparePartId}/add`,
       {
         method:"PATCH",
         headers:{
@@ -77,7 +77,7 @@ export const StockProvider = ({ children }) => {
   ) => {
 
     const response = await fetch(
-      `http://localhost:5000/api/spare-parts/${sparePartId}/sell`,
+      `https://tmsimport-backend.vercel.app/api/spare-parts/${sparePartId}/sell`,
       {
         method:"PATCH",
         headers:{
@@ -103,7 +103,7 @@ export const StockProvider = ({ children }) => {
   ) => {
 
     const response = await fetch(
-      `http://localhost:5000/api/spare-parts/${sparePartId}`,
+      `https://tmsimport-backend.vercel.app/api/spare-parts/${sparePartId}`,
       {
         method:"PATCH",
         headers:{
@@ -128,7 +128,7 @@ export const StockProvider = ({ children }) => {
   const deleteSparePart = async (sparePartId)=>{
 
     const response = await fetch(
-      `http://localhost:5000/api/spare-parts/${sparePartId}`,
+      `https://tmsimport-backend.vercel.app/api/spare-parts/${sparePartId}`,
       {
         method:"DELETE",
         headers:{
@@ -152,7 +152,7 @@ export const StockProvider = ({ children }) => {
 
 
     const response = await fetch(
-      "http://localhost:5000/api/spare-parts",
+      "https://tmsimport-backend.vercel.app/api/spare-parts",
       {
         method:"POST",
         headers:{
@@ -177,7 +177,7 @@ export const StockProvider = ({ children }) => {
   const getHistory = async ()=>{
 
     const response = await fetch(
-      "http://localhost:5000/api/history",
+      "https://tmsimport-backend.vercel.app/api/history",
       {
         headers:{
           Authorization:`Bearer ${token}`

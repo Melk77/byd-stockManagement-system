@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/spare-parts";
+const BASE_URL = "https://tmsimport-backend.vercel.app/api/spare-parts";
 
 export const fetchDashboardSummary = async (token) => {
   const response = await fetch(`${BASE_URL}/summary`, {
@@ -58,3 +58,4 @@ export const updateSparePart = async (
 
   return data.data;
 };
+

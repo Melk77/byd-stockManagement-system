@@ -35,7 +35,7 @@ const SparePartsPage = () => {
     try {
 
       const response = await fetch(
-        `http://localhost:5000/api/spare-parts/${carModelId}`,
+        `https://tmsimport-backend.vercel.app/api/spare-parts/${carModelId}`,
         {
           headers:{
             Authorization:`Bearer ${token}`
@@ -58,7 +58,7 @@ const SparePartsPage = () => {
   const updateQuantity = async () => {
 
     await fetch(
-      `http://localhost:5000/api/spare-parts/${selectedPart.id}/add`,
+      `https://tmsimport-backend.vercel.app/api/spare-parts/${selectedPart.id}/add`,
       {
         method:"PATCH",
         headers:{
@@ -82,7 +82,7 @@ const SparePartsPage = () => {
   const sellPart = async () => {
 
     await fetch(
-      `http://localhost:5000/api/spare-parts/${selectedPart.id}/sell`,
+      `https://tmsimport-backend.vercel.app/api/spare-parts/${selectedPart.id}/sell`,
       {
         method:"PATCH",
         headers:{
@@ -106,7 +106,7 @@ const SparePartsPage = () => {
   const editPart = async () => {
 
     await fetch(
-      `http://localhost:5000/api/spare-parts/${selectedPart.id}`,
+      `https://tmsimport-backend.vercel.app/api/spare-parts/${selectedPart.id}`,
       {
         method:"PATCH",
         headers:{
@@ -134,7 +134,7 @@ const SparePartsPage = () => {
   const deletePart = async(id)=>{
 
     await fetch(
-      `http://localhost:5000/api/spare-parts/${id}`,
+      `https://tmsimport-backend.vercel.app/api/spare-parts/${id}`,
       {
         method:"DELETE",
         headers:{
@@ -153,7 +153,7 @@ const SparePartsPage = () => {
   const addNewPart = async()=>{
 
     await fetch(
-      "http://localhost:5000/api/spare-parts",
+      "https://tmsimport-backend.vercel.app/api/spare-parts",
       {
         method:"POST",
         headers:{

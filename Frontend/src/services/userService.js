@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/users";
+const BASE_URL = "https://tmsimport-backend.vercel.app/api/users";
 
 export const fetchUsers = async (token) => {
   const response = await fetch(BASE_URL, {
@@ -80,3 +80,4 @@ export const updateMyAccount = async (
 
   return data.data;
 };
+

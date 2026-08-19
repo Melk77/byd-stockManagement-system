@@ -19,7 +19,7 @@ const HistoryPage = () => {
   const fetchHistory = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/history",
+        "https://tmsimport-backend.vercel.app/api/history",
         {
           headers: {
             Authorization: `Bearer ${token}`,
